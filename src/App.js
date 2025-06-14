@@ -9,14 +9,12 @@ import './index.css';
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-100">
         <Header />
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/add-task" element={<AddTask />} />
           <Route path="/task/:id" element={<EditTask />} />
         </Routes>
-      </div>
     </Router>
   );
 };
